@@ -1,22 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from "./components/NavBar/NavBar";
+import "./App.css";
 
 function App() {
+  const h1Style= {
+    color: "pink",
+    display: "flex",
+    justifyContent:"center",
+};
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
+
+        <NavBar />
+
+        
+        <h1 style={h1Style}>Tienda productos para gatos</h1>
+        
+
       </header>
     </div>
   );
