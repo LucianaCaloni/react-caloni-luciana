@@ -2,6 +2,7 @@
 //exportrlo
 //iportarlo en app
 import "./navBar.css";
+import CartWidget from "../CartWidget/CartWidget";
 
 
 export default function NavBar (){
@@ -10,6 +11,8 @@ export default function NavBar (){
     display: "flex",
     flexDirection:"row",
     justifyContent:"space-around",
+    fontSize: "1.5rem",
+    backgroundColor: "yellow"
     
     }
   
@@ -26,6 +29,7 @@ export default function NavBar (){
                 <li>
                     Ofertas
                 </li>
+                <CartWidget/>
             </ul>
         </nav>
         
