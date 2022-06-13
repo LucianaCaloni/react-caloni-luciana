@@ -1,0 +1,27 @@
+.productos-card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    /* justify-content: center; */
+
+    
+}
+.productos-card__img{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 2rem;
+}
+.products-img{
+    width: 40%;
+    justify-content: center;
+
+}
+.productos-card__txt{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
