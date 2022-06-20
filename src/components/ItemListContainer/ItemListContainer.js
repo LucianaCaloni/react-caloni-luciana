@@ -1,7 +1,7 @@
 
 import React, {useState, useEffect} from "react";
 import "./ItemListContainer.css";
-import ItemCount from "./ItemCount/ItemCount";
+import ItemCount from "../ItemCount/ItemCount";
 import {products} from "../../mocks/products";
 import ItemList from "../ItemList/ItemList";
 
@@ -20,7 +20,7 @@ export default function ItemListContainer(props) {
         setProd(res);
       }); 
       
-    
+     
 
   }, []);
   
