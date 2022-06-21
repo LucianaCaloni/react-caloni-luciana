@@ -1,10 +1,15 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities;  */
+@tailwind utilities;  
 
-.App-header{
+/* .App-header{
   background-color: #7c9ddf;
   min-height: 100vh;
  
-} 
+}  */
 
+body{
+  background-color: lightpink;
+  
+  
+}

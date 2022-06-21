@@ -5,7 +5,7 @@ export const products = [
     price: 2000,
     stock: 10,
     img: "https://res.cloudinary.com/di9ergurx/image/upload/v1655100450/otros%20gato/x_ejemplopuertagatogrande09098240_dzrdd2.jpg",
-    category: "otros",
+    category: "puertas",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iusto magni quaerat nisi quisquam? Error, earum aspernatur tenetur sint cum in quibusdam eos quae velit ratione maxime! Error, earum repellendus.",
   },
@@ -16,7 +16,7 @@ export const products = [
     price: 2400,
     stock: 5,
     img: "https://res.cloudinary.com/di9ergurx/image/upload/v1655100450/otros%20gato/puerta-830x830_w4hzhb.jpg",
-    category: "otros",
+    category: "puertas",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iusto magni quaerat nisi quisquam? Error, earum aspernatur tenetur sint cum in quibusdam eos quae velit ratione maxime! Error, earum repellendus.",
   },
@@ -26,7 +26,7 @@ export const products = [
     price: 2600,
     stock: 3,
     img: "https://res.cloudinary.com/di9ergurx/image/upload/v1655100449/otros%20gato/81ZMHpf2BmL._AC_SX466__tnontd.jpg",
-    category: "otros",
+    category: "puertas",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iusto magni quaerat nisi quisquam? Error, earum aspernatur tenetur sint cum in quibusdam eos quae velit ratione maxime! Error, earum repellendus.",
   },
@@ -36,7 +36,7 @@ export const products = [
     price: 1200,
     stock: 6,
     img: "https://res.cloudinary.com/di9ergurx/image/upload/v1655100450/otros%20gato/Hamaca-con-ventosas-para-gato-cama-colgante-montada-en-el-asiento-percha-para-ventana-sof-ventana.jpg_Q90.jpg__sshosg.webp",
-    category: "otros",
+    category: "hamaca",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iusto magni quaerat nisi quisquam? Error, earum aspernatur tenetur sint cum in quibusdam eos quae velit ratione maxime! Error, earum repellendus.",
   },
@@ -46,7 +46,7 @@ export const products = [
     price: 2000,
     stock: 2,
     img: "https://res.cloudinary.com/di9ergurx/image/upload/v1655100449/otros%20gato/hamaca-para-ventana-ventosas-para-gatos-mta-12743_zrwv24.jpg",
-    category: "otros",
+    category: "hamaca",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iusto magni quaerat nisi quisquam? Error, earum aspernatur tenetur sint cum in quibusdam eos quae velit ratione maxime! Error, earum repellendus.",
   },

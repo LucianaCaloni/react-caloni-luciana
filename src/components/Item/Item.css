@@ -12,10 +12,14 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    padding: 2rem;
+    background-color: antiquewhite;
+    margin: 1rem;
+    border-radius: 5px;
+   
+    
 }
 .products-img{
-    width: 40%;
+    width: 50%;
     justify-content: center;
 
 }
@@ -24,4 +28,10 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    text-align: center;
+}
+.button-style{
+    background-color: rgba(43, 226, 226, 0.664);
+    padding:5px;
+    border-radius: 5px;
 }

@@ -1,0 +1,8 @@
+.detalle-prod{background-color: aquamarine;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+font-size: 2rem;
+
+}
