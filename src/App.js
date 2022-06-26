@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar/NavBar";
 import "./App.css";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
+import Cart from "./components/Cart/Cart";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import contact from "./pages/contact";
 function App() {
@@ -43,6 +44,7 @@ function App() {
               path="/item/:id"
               element={<ItemDetailContainer gretting="Detalle del producto" />}
             ></Route>
+            <Route path="/cart" element={<Cart />}></Route>
             <Route path="/contact" element={<contact />}></Route>
           </Routes>
           {/* Aca  fuera de Routes hacer el footer */}

@@ -1,7 +1,7 @@
 import "./ItemCount.css";
 import { useState } from "react";
 
-function ItemCount({ stock, initial }) {
+function ItemCount({ stock, initial, onAdd }) {
   const [cant, setCount] = useState(initial);
   function suma() {
     if (cant < stock) {
@@ -23,7 +23,7 @@ function ItemCount({ stock, initial }) {
       <span className= "contador-num">{cant}</span>
       <button className= "contador-num" onClick={suma}>+</button>
       <br />
-      <button className= "contador-button">Add to cart</button>
+      <button onClick={()=>onAdd(cant)} className= "contador-button">Add to cart</button>
     </div>
   );
 }
