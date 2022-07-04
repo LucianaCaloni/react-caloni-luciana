@@ -3,10 +3,11 @@ import NavBar from "./components/NavBar/NavBar";
 import "./App.css";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
-import Cart from "./components/Cart/Cart";
+
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import contact from "./pages/contact";
 import { CartProvider } from "./contexto/CartContext";
+import CartView from "./components/CartView/CartView";
 
 function App() {
   const h1Style = {
@@ -48,7 +49,7 @@ function App() {
                   <ItemDetailContainer gretting="Detalle del producto" />
                 }
               ></Route>
-              <Route path="/cart" element={<Cart />}></Route>
+              <Route path="/cart"  element={<CartView/>}></Route>
               <Route path="/contact" element={<contact />}></Route>
             </Routes>
           

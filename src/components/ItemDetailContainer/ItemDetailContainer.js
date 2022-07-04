@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import { products } from "../../mocks/products";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import "../ItemDetailContainer/ItemDetailContainer.css";
-
+import RiseLoader from "react-spinners/RiseLoader";
 import { useParams } from "react-router-dom";
 
 export default function ItemDetailContainer(props) {
   const [product, setProduct] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
   const { id } = useParams();
   console.log("parametro", id);
 
@@ -23,6 +24,7 @@ export default function ItemDetailContainer(props) {
     });
     getProduct.then((res) => {
       setProduct(res);
+      setIsLoading(false);
     });
   }, [id]);
 
@@ -30,9 +32,15 @@ export default function ItemDetailContainer(props) {
     <>
       <div>
         <p className="detalle-prod text-center">{props.gretting}</p>
-
-        <ItemDetail item={product} />
-        
+        {isLoading ? (
+          <RiseLoader
+            className="container mx-auto mt-10 text-center"
+            color="#f3f0f2"
+            size="30"
+          />
+        ) : (
+          <ItemDetail item={product} />
+        )}
       </div>
     </>
   );
