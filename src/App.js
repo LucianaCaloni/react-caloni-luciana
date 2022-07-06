@@ -3,13 +3,18 @@ import NavBar from "./components/NavBar/NavBar";
 import "./App.css";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import contact from "./pages/contact";
 import { CartProvider } from "./contexto/CartContext";
 import CartView from "./components/CartView/CartView";
+import appFirebase from "./components/services/firebase";
+
 
 function App() {
+  
+
+
+  ////
   const h1Style = {
     color: "#fff7c0",
     display: "flex",
