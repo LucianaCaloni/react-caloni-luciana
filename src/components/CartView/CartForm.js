@@ -47,7 +47,7 @@ function CartForm({cart, totalPriceCart, clearCart, buyOrder} ) {
         <label htmlFor="email">Email</label>
         <input onChange={handleChange} name='email'></input>
 
-        <button onClick={handleBuyOrder}>Finalizar compra</button>
+        <button className="bg-neutral-200 m-2 p-2 hover:bg-gray-300 rounded-lg" onClick={handleBuyOrder}>Finalizar compra</button>
     </form>
   )
 }
