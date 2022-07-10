@@ -3,7 +3,7 @@ import "../Item/Item.css";
 import { Link } from "react-router-dom";
 
 const Item = ({ item }) => {
-  console.log(item);
+  
   const urlDetail = `/item/${item.id}`;
   return (
     <div className="h-auto w-full">
