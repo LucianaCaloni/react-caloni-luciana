@@ -29,8 +29,9 @@ function CartView() {
     <div className="">
       {cart.map((item) => (
         <div className="container px-5 py-24 mx-auto flex-row sm:flex-nowrap flex-wrap">
-          <div className=" bg-orange-100 bg-auto text-center rounded-sm">
+          <div className="flex flex-col items-center justify-center justify-items-center   bg-orange-100 bg-auto text-center rounded-sm">
             <h2 className="text-lg font-semibold">{item.name}</h2>
+            <img className="w-1/6 items-center" src={item.img} alt="producto"></img>
             <h2>{item.description}</h2>
             <h2 className="text-sky-500 text-lg font-semibold">
               ${item.price}
@@ -60,12 +61,7 @@ function CartView() {
         <button className="text-lg font-semibold">
           Total a pagar: ${totalPriceCart()}
         </button>
-        {/* <button className="bg-neutral-200 m-2 p-2 hover:bg-gray-300 rounded-lg" onClick={handleBuyOrder}>
-          Finalizar compra
-        </button>
-        <button className="bg-red-600 m-2 p-2 hover:bg-red-200 rounded-lg">
-          Cancelar compra
-        </button> */}
+       
         <CartForm cart={cart} totalPriceCart={totalPriceCart} clearCart={clearCart} buyOrder= {buyOrder}/>
         <button
           className="bg-amber-400 m-2 p-2 hover:bg-orange-100 rounded-lg"

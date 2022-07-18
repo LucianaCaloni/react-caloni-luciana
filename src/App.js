@@ -4,10 +4,10 @@ import "./App.css";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import contact from "./pages/contact";
 import { CartProvider } from "./contexto/CartContext";
 import CartView from "./components/CartView/CartView";
 import appFirebase from "./components/services/firebase";
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
     color: "#fff7c0",
     display: "flex",
     justifyContent: "center",
-    fontSize: "2rem",
+    fontSize: "3rem",
   };
 
   return (
@@ -57,6 +57,7 @@ function App() {
               <Route path="/cart"  element={<CartView/>}></Route>
               <Route path="/contact" element={<contact />}></Route>
             </Routes>
+            <Footer/>
           
           </BrowserRouter>
         </CartProvider>

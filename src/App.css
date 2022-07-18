@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;  
 
-/* .App-header{
-  background-color: #7c9ddf;
-  min-height: 100vh;
- 
-}  */
+
+*{
+  font-family: 'Cookie', cursive;
+  
+}
 
 body{
   background-color: lightpink;

@@ -19,11 +19,11 @@ function ItemCount({ stock, initial, onAdd }) {
 
   return (
     <div className="contador" >
-      <button  className= "contador-num"onClick={resta}>-</button>
-      <span className= "contador-num">{cant}</span>
-      <button className= "contador-num" onClick={suma}>+</button>
+      <button  className= "hover:bg-teal-100 text-2xl contador-num"onClick={resta}>-</button>
+      <span className= " text-2xl contador-num">{cant}</span>
+      <button className= "hover:bg-teal-100 text-2xl contador-num" onClick={suma}>+</button>
       <br />
-      <button onClick={()=>onAdd(cant)} className= "contador-button">Add to cart</button>
+      <button onClick={()=>onAdd(cant)} className= "text-2xl contador-button hover:bg-teal-100">Add to cart</button>
     </div>
   );
 }

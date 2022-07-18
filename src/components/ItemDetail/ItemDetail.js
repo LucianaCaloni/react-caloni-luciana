@@ -14,21 +14,21 @@ function ItemDetail({ item }) {
     addToCart(item, cantidad);
   };
   return (
-    <div className="detalle-style">
-      <img src={item.img} alt=""></img>
+    <div className="shadow-xl detalle-style">
+      <img className="rounded-lg mt-3 hover:contrast-50  " src={item.img} alt=""></img>
       <h1>{item.name}</h1>
       <p>{item.description}</p>
-      <p>${item.price}</p>
+      <p className="text-sky-400  font-semibold">${item.price}</p>
       
       {cantd === 0 ? (
         <ItemCount stock={5} initial={1} onAdd={onAdd} />
       ) : (
-        <Link className="text-white bg-amber-400 rounded p-2 m-3" to="/cart">
+        <Link className="text-2xl text-white bg-amber-400 rounded p-2 m-3" to="/cart">
           To Cart
         </Link>
       )}
       {isInCart(item.id) && (
-        <button onClick={()=>removeItemFromCart(item.id)} className="text-white bg-red-600 rounded p-2">Remove</button>
+        <button onClick={()=>removeItemFromCart(item.id)} className="text-2xl text-white bg-red-600 rounded p-2">Remove</button>
       )}
 
       

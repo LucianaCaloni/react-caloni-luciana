@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import Swal from 'sweetalert2';
 
 function CartForm({cart, totalPriceCart, clearCart, buyOrder} ) {
     const [buyer, setBuyer]= useState({
@@ -31,7 +32,15 @@ function CartForm({cart, totalPriceCart, clearCart, buyOrder} ) {
         }
         buyOrder (dataOrder).then ((orderDataCreated)=>{
           clearCart();
-          console.log(orderDataCreated.id);
+          var orderId= orderDataCreated.id
+
+        Swal.fire(
+          "Tu compra ha sido realizada con éxito! Tu numero de orden es ", orderId,
+          "success"
+          
+        )
+         
+          // console.log(orderDataCreated.id);
         });
         
       
@@ -49,6 +58,10 @@ function CartForm({cart, totalPriceCart, clearCart, buyOrder} ) {
 
         <button className="bg-neutral-200 m-2 p-2 hover:bg-gray-300 rounded-lg" onClick={handleBuyOrder}>Finalizar compra</button>
     </form>
+    
+   
+   
+
   )
 }
 

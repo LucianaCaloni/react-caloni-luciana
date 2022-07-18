@@ -9,36 +9,46 @@ import "../../pages/contact";
 
 export default function NavBar() {
   const navStyle = {
-    color: "violet",
+    // color: "violet",
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-around",
-    fontSize: "1.5rem",
+    fontSize: "2.5rem",
     backgroundColor: "yellow",
     padding:"1rem",
   };
 
   return (
-    <nav className="navPrincipal">
-      <ul className="navList" style={navStyle}>
-        <li>
-          <NavLink to="/">Home</NavLink>
+    <nav className="navPrincipal text-pink-500   ">
+      <ul className="items-center font-mediumnavList" style={navStyle}>
+        <li >
+          <NavLink to="/"><img className="w-1/2 hover:scale-125"  src="https://res.cloudinary.com/di9ergurx/image/upload/v1658127155/proyecto/latte_and_mocca_logoasd_rq4xlp.png" alt="logo"></img></NavLink>
         </li>
 
-        <li>
+        <li className="hover:text-purple-500">
           <NavLink to="/catalogo">Catalogo</NavLink>
         </li>
-        <li>
+        <li className="hover:text-purple-500">
           <NavLink to="/category/puertas">Puertas</NavLink>
         </li>
-        <li>
+        <li className="hover:text-purple-500">
           <NavLink to="/category/hamaca">Hamacas</NavLink>
         </li>
-        <li>
+        <li className="hover:text-purple-500">
+          <NavLink to="/category/torre">Torres</NavLink>
+        </li>
+        <li className="hover:text-purple-500">
+          <NavLink to="/category/arenero">Areneros</NavLink>
+        </li>
+        <li className="hover:text-purple-500">
+          <NavLink to="/category/misc">Miscelaneos</NavLink>
+        </li>
+        
+        <li className="hover:text-purple-500">
           <NavLink to="/contact">Contacto</NavLink>
         </li>
 
-        <CartWidget />
+        <CartWidget/>
       </ul>
     </nav>
   );

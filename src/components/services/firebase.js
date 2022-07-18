@@ -34,7 +34,7 @@ export async function getProduct(){
   return respuesta;
 
 }
-//id desafio//
+
 export async function traerUnProducto(id){
   
 

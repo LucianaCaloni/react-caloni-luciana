@@ -25,6 +25,7 @@
 }
 .productos-card__txt{
     display: flex;
+    font-size: 1.5rem;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
