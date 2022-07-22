@@ -1,5 +1,6 @@
 import "./ItemCount.css";
 import { useState } from "react";
+import Swal from 'sweetalert2'
 
 function ItemCount({ stock, initial, onAdd }) {
   const [cant, setCount] = useState(initial);
@@ -7,7 +8,12 @@ function ItemCount({ stock, initial, onAdd }) {
     if (cant < stock) {
       setCount(cant + 1);
     } else {
-      alert("Llegaste al limite maximo de productos")
+      Swal.fire(
+        'Llegaste al limite maximo de productos',
+        '',
+        'warning'
+      )
+      
     }
   }
 

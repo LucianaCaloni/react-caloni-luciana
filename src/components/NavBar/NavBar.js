@@ -5,7 +5,7 @@ import React from "react";
 import "./navBar.css";
 import CartWidget from "../CartWidget/CartWidget";
 import { NavLink } from "react-router-dom";
-import "../../pages/contact";
+import "../../pages/Contact";
 
 export default function NavBar() {
   const navStyle = {
@@ -19,7 +19,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="navPrincipal text-pink-500   ">
+    <nav className="navPrincipal text-pink-500">
       <ul className="items-center font-mediumnavList" style={navStyle}>
         <li >
           <NavLink to="/"><img className="w-1/2 hover:scale-125"  src="https://res.cloudinary.com/di9ergurx/image/upload/v1658127155/proyecto/latte_and_mocca_logoasd_rq4xlp.png" alt="logo"></img></NavLink>
@@ -46,6 +46,9 @@ export default function NavBar() {
         
         <li className="hover:text-purple-500">
           <NavLink to="/contact">Contacto</NavLink>
+        </li>
+        <li className="hover:text-purple-500">
+          <NavLink to="/Faq">Faq</NavLink>
         </li>
 
         <CartWidget/>

@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import {useForm} from "react-hook-form"
 
 function contact() {
   return (
-    <div>contact</div>
+    <div>
+      <h1></h1>
+      <form>
+
+      </form>
+    </div>
   )
 }
 

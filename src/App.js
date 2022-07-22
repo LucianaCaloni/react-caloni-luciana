@@ -6,8 +6,9 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { CartProvider } from "./contexto/CartContext";
 import CartView from "./components/CartView/CartView";
-import appFirebase from "./components/services/firebase";
 import Footer from "./components/Footer/Footer";
+import Faq from "./pages/Faq";
+import SobreNosotros from "./pages/SobreNosotros";
 
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
           <BrowserRouter>
             {/* El Navbar va fuera de Routes porque queremos tenerlo siempre */}
             <NavBar />
-            <h1 style={h1Style}>Tienda productos para gatos</h1>
+            <h1 style={h1Style}>Tienda de productos para gatos</h1>
             <Routes>
               <Route
                 path="/"
@@ -56,6 +57,8 @@ function App() {
               ></Route>
               <Route path="/cart"  element={<CartView/>}></Route>
               <Route path="/contact" element={<contact />}></Route>
+              <Route path="/Faq" element={<Faq />}></Route>
+              <Route path="/Sobrenosotros" element={<SobreNosotros/>}></Route>
             </Routes>
             <Footer/>
           

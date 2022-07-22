@@ -2,12 +2,10 @@ import React from "react";
 import { useContext } from "react";
 import { CartContext } from "../../contexto/CartContext";
 import { Link } from "react-router-dom";
-import {buyOrder} from "../services/firebase"
 import CartForm from "./CartForm";
 
 function CartView() {
-  const { cart, removeItemFromCart, clearCart, totalPriceCart } =
-    useContext(CartContext);
+  const { cart, removeItemFromCart, clearCart, totalPriceCart } = useContext(CartContext);
 
 
   if (cart.length === 0) {
@@ -26,11 +24,11 @@ function CartView() {
   }
 
   return (
-    <div className="">
+    <div>
       {cart.map((item) => (
-        <div className="container px-5 py-24 mx-auto flex-row sm:flex-nowrap flex-wrap">
-          <div className="flex flex-col items-center justify-center justify-items-center   bg-orange-100 bg-auto text-center rounded-sm">
-            <h2 className="text-lg font-semibold">{item.name}</h2>
+        <div className="container px-5 py-24 mx-auto flex-row sm:flex-nowrap flex-wrap text-2xl">
+          <div className="flex flex-col items-center justify-center justify-items-center   bg-orange-100 bg-auto text-center rounded-lg">
+            <h2 className="text-2xl font-semibold">{item.name}</h2>
             <img className="w-1/6 items-center" src={item.img} alt="producto"></img>
             <h2>{item.description}</h2>
             <h2 className="text-sky-500 text-lg font-semibold">
@@ -52,23 +50,27 @@ function CartView() {
                   {" "}
                   ${item.price * item.cantidad}
                 </span>
+               
               </p>
             </>
+
           </div>
         </div>
       ))}
-      <div className=" container mx-auto  flex-row sm:flex-nowrap flex-wrap text-center  space-x-5 bg-cyan-500">
+      <div className=" container mx-auto rounded-lg flex-row sm:flex-nowrap flex-wrap text-center  space-x-5 bg-cyan-500">
         <button className="text-lg font-semibold">
           Total a pagar: ${totalPriceCart()}
         </button>
        
-        <CartForm cart={cart} totalPriceCart={totalPriceCart} clearCart={clearCart} buyOrder= {buyOrder}/>
-        <button
-          className="bg-amber-400 m-2 p-2 hover:bg-orange-100 rounded-lg"
-          onClick={clearCart}
-        >
+        
+        <button className="bg-amber-400 m-2 p-2 hover:bg-orange-100 rounded-lg"  onClick={clearCart}>
           Vaciar carrito
         </button>
+        
+      </div>
+      <div className=" container mx-auto mt-6 mb-8 rounded-lg flex flex-col flex-nowrap justify-center items-center bg-zinc-400">
+        <span className="text-violet-700 text-2xl ">Complete el formulario para poder finalizar la compra</span>
+      <CartForm cart={cart} totalPriceCart={totalPriceCart} clearCart={clearCart} />
       </div>
     </div>
   );
