@@ -7,7 +7,9 @@ const ItemList = ({ items }) => {
     
     <div className="grid grid-cols-4 w-full ">
       {items.map((item) => {
-        return <div className=""><Item item={item} /></div>;
+        return <div key={item.id}>
+          <Item item={item} />
+          </div>;
       })}
     </div>
   );

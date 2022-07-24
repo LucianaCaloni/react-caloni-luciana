@@ -26,7 +26,7 @@ function CartView() {
   return (
     <div>
       {cart.map((item) => (
-        <div className="container px-5 py-24 mx-auto flex-row sm:flex-nowrap flex-wrap text-2xl">
+        <div key={item.id} className="container px-5 py-24 mx-auto flex-row sm:flex-nowrap flex-wrap text-2xl">
           <div className="flex flex-col items-center justify-center justify-items-center   bg-orange-100 bg-auto text-center rounded-lg">
             <h2 className="text-2xl font-semibold">{item.name}</h2>
             <img className="w-1/6 items-center" src={item.img} alt="producto"></img>

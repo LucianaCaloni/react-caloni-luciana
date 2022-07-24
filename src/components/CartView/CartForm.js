@@ -11,7 +11,17 @@ function CartForm({ cart, totalPriceCart, clearCart}) {
     name: "",
     phone: "",
     email: "",
-  })
+  });
+  const ValForm = () => {
+    if (
+      (buyer.user === "") |
+      (buyer.phone === "") |
+      (buyer.email === "") |
+      (buyer.msj === "")
+    ) {
+      return true;
+    }
+  };
   
   const handleChange = (e) => {
     const field = e.target.name;
@@ -49,22 +59,23 @@ function CartForm({ cart, totalPriceCart, clearCart}) {
   return (
   <>
     
-      <form noValidate className=" container mx-auto flex flex-col sm:flex-nowrap flex-wrap items-center text-center  space-x-5 bg-blue-200">
-        <label htmlFor="name">Usuario</label>
+      <form action=""className=" container mx-auto flex flex-col sm:flex-nowrap flex-wrap items-center text-center  space-x-5 bg-blue-200">
+        
+        <label htmlFor="name" className="text-2xl">Usuario</label>
         <input className="rounded-md" onChange={handleChange} name="name" type="text" required/>
         
 
-        <label htmlFor="phone">Telefono</label>
+        <label htmlFor="phone" className="text-2xl">Telefono</label>
         <input className="rounded-md" onChange={handleChange}  name="phone" type="phone" required/>
         
        
 
-        <label htmlFor="email">Email</label>
+        <label htmlFor="email" className="text-2xl">E-mail</label>
         <input className="rounded-md" onChange={handleChange} name="email" type="email" required/>
         
         
 
-        <button type="submit" className="rounded-lg hover:bg-violet-300 bg-red-300 m-2 p-2 hover:bg-teal-300rounded-lg" onClick={handleBuyOrder}> Finalizar compra</button>
+        <button type="submit" className="rounded-lg hover:bg-violet-300 bg-red-300 m-2 p-2 text-2xl" onClick={handleBuyOrder} disabled={ValForm()}> Finalizar compra</button>
       </form>
   </>
     

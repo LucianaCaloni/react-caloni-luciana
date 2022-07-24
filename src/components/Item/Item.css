@@ -3,9 +3,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: stretch;
-    
-
-    
+ 
 }
 .productos-card__img{
     display: flex;

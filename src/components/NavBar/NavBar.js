@@ -1,6 +1,4 @@
-//los componentes tienen que ir con PascalCase//
-//exportrlo
-//iportarlo en app
+
 import React from "react";
 import "./navBar.css";
 import CartWidget from "../CartWidget/CartWidget";

@@ -24,11 +24,11 @@ function ItemDetail({ item }) {
         <ItemCount stock={5} initial={1} onAdd={onAdd} />
       ) : (
         <Link className="text-2xl text-white bg-amber-400 rounded p-2 m-3" to="/cart">
-          To Cart
+          Ir al carrito
         </Link>
       )}
       {isInCart(item.id) && (
-        <button onClick={()=>removeItemFromCart(item.id)} className="text-2xl text-white bg-red-600 rounded p-2">Remove</button>
+        <button onClick={()=>removeItemFromCart(item.id)} className="text-2xl text-white bg-red-600 rounded p-2">Remover</button>
       )}
 
       
