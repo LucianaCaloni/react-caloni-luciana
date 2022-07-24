@@ -1,4 +1,4 @@
-// Import the functions you need from the SDKs you need
+
 import { initializeApp } from "firebase/app";
 import {getFirestore, getDocs, collection, getDoc, doc, where, query, setDoc, addDoc, Timestamp} from "firebase/firestore"
 
@@ -12,7 +12,7 @@ const firebaseConfig = {
   appId: "1:603886630814:web:f8530a607831aec04cc88f"
 };
 
-// Initialize Firebase
+
 const appFirebase = initializeApp(firebaseConfig);
 const appFirestore = getFirestore(appFirebase);
 

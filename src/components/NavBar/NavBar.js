@@ -7,7 +7,7 @@ import "../../pages/Contact";
 
 export default function NavBar() {
   const navStyle = {
-    // color: "violet",
+    
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-around",
