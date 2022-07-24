@@ -1,26 +1,38 @@
 
+# Tienda Latte & Mocca
 Este es mi proyecto en React JS del curso de CoderHouse. 
-Actualmente se encuentra en construccion
-Me encuentro en la mitad de la cursada.
-
-Este Readme es para la entrega intermedia del proyecto final.
 
 
-Es una pagina de venta de productos para gatos especificamente.
-La pagina es e-commerce.
+Este Readme es para la entrega final del proyecto final.
 
 
-
-Se utilizo para el proyecto las siguientes tecnologias y librerias
-
-Css
-Tailwind
-ReactJS
+Es una pagina de venta de productos para gatos.
+La pagina es e-commerce programado en React JS.
 
 
 
+## Se utilizó para el proyecto las siguientes tecnologias y librerias
 
-Gracias por visitar el proyecto.
+### ReactJS
+### Css
+### Tailwind
+### Sweet Alert2
+### FontAwsome
+### Google Fonts
+### Firebase de Google
+
+
+## `Deploy`
+### Netlify
+
+
+
+
+
+
+
+
+
 
 
 
@@ -53,4 +65,18 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
+
+
+
+## 🚀 Sobre mi
+
+
+
+## Authors
+
+- [@Luciana Caloni](https://github.com/LucianaCaloni)
+
+
+## 🛠 Skills
+Javascript, HTML, CSS, ReactJS, Sass, Tailwind, Boostrap.
 

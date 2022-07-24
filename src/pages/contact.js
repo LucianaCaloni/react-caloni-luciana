@@ -54,7 +54,7 @@ const Contact = () => {
       <input type="number"name="phone" className="rounded-md" onChange={handleChange} required />
 
       <label htmlFor="mensj" className="text-2xl" >Mensaje</label>
-      <textarea name="mensj"cols="30"rows="10"className="text-2xl"onChange={handleChange}></textarea>
+      <textarea name="mensj"cols="40"rows="10" className="text-2xl"onChange={handleChange}></textarea>
       <button className="text-2xl rounded-lg hover:bg-violet-300 bg-red-300 m-2 p-2 " onClick={handleForm} disabled={ValForm()}>
         Send
       </button>
