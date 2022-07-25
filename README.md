@@ -3,7 +3,7 @@
 Este es mi proyecto en React JS del curso de CoderHouse. 
 
 
-Este Readme es para la entrega final del proyecto final.
+Este Readme es para la entrega final del proyecto.
 
 
 Es una pagina de venta de productos para gatos.
