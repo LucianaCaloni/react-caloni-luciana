@@ -22,8 +22,6 @@ La pagina es e-commerce programado en React JS.
 ### Firebase de Google
 
 
-## `Deploy`
-### Netlify
 
 
 
