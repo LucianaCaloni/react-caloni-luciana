@@ -1,17 +1,17 @@
 
 # Tienda Latte & Mocca
-Este es mi proyecto en React JS del curso de CoderHouse. 
+This is my React JS project for the CoderHouse course.
+
+This Readme is for the final project submission.
+
+It is a website for selling cat products.
+The website is an e-commerce site programmed in React JS.
 
 
-Este Readme es para la entrega final del proyecto.
-
-
-Es una pagina de venta de productos para gatos.
-La pagina es e-commerce programado en React JS.
 
 
 
-## Se utilizó para el proyecto las siguientes tecnologias y librerias
+## The following technologies and libraries were used for this project.
 
 ### ReactJS
 ### Css
